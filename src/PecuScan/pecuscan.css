@@ -1,0 +1,173 @@
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+a{
+    color: rgb(7, 132, 195);
+}
+
+/* ----------------------  Navbar ---------------------- */
+
+.navbarHead{
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.navbarHead:hover{
+    color: rgb(7, 132, 195) !important;
+}
+.navbarIcon{
+    display:flex;
+    align-items: center;
+}
+.navbarIcon > svg{
+    font-size: 18px;
+}
+@media (max-width: 768px){
+    .resHeader, .resUl{
+        display: block !important;
+    }
+}
+
+/* ----------------------  SearchBar ---------------------- */
+
+.background_Image{
+    background-image: url("https://etherscan.io/images/svg/components/abstract-shapes-20.svg?v=1");
+    background-color: rgba(17,27,54,1);
+}
+.search_Space{
+    padding:40px 15px 90px 15px;
+}
+.form-select{
+    font-size: 16px;
+    border: none;
+    padding: 0.3rem 1.8rem 0.3rem 0.6rem;
+}
+.form-control{
+    font-size: 16px;
+    padding-right: 32px;
+    border:none;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+}
+@media (max-width: 768px){
+    .resSearch{
+        display: block !important;
+    }
+    .resSearchbar, .resChartbar{
+        max-width: 100% !important;
+    }
+}
+
+/* ----------------------  Content ---------------------- */
+
+.text-grey{
+    font-size: 12px !important;
+    letter-spacing: .5px !important;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+.Eth_icon{
+    margin-right: 15px;
+}
+
+/* ----------------------  Block ---------------------- */
+
+.block_header,.block_body{
+    padding: 16px;
+    border-bottom: 1px solid #e9ecef;
+}
+.block_icon{
+    background-color: rgba(248,249,250,1);
+    color:#6c757d;
+    border-radius: 8px;
+    padding: 12px;
+}
+.text-truncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-muted{
+    color:#6c757d;
+    font-size: 14px !important;
+}
+.block_gap{
+    display: flex;
+    gap:4px;
+    font-size: 15px !important;
+}
+.block_Eth{
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 0.75em;
+    padding: 0.25em 0.75em;
+}
+.block_footer{
+    background-color: rgba(248,249,250,1);
+    text-align: center;
+    padding: 16px;
+}
+.block_footer a{
+    color:#6c757d;
+    background-color: rgba(248,249,250,1);
+}
+.block_footer i >svg {
+    margin-left: 4px;
+    font-size: 12px;
+}
+@media (max-width: 768px){
+    .resBlock{
+        display: block !important;
+    }
+}
+
+/* ----------------------  Footer ---------------------- */
+
+.footer_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.icon_base > a{
+    border: none;
+    background-color: #e9ecef;
+    color: #111b36;
+    border-radius: 50%;
+}
+.icon_base > a > i{
+    padding: 7px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.footer_description{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 40px 0;
+}
+.List_item{
+    padding: 0 !important;
+    margin-bottom: 12px;
+}
+.List_item > a{
+    color: #111b36!important;
+    font-size: 13px;
+}
+.List_item > a:hover{
+    color:rgb(7, 132, 195) !important;
+    cursor: pointer;
+}
+.footer_copyright{
+    border-top: 1px solid #e9ecef;
+    padding: 16px 0;
+}
+.heartIcon  > svg{
+    font-size: 13px;
+    margin-left: 4px;
+    color:rgba(220,53,69,1);
+}
+
