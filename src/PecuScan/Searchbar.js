@@ -12,10 +12,10 @@ function SearchBar() {
                     <Grid container spacing={2} className="resSearch">
                         <Grid item xs={6} md={8} className="resSearchbar">
                             <Box>
-                                <p style={{ fontSize: "21px", fontWeight: "400", marginBottom: "12px", color: "white" }}>The Ethereum Blockchain Explorer</p>
+                                <p style={{ fontSize: "21px", fontWeight: "400", marginBottom: "12px", color: "white", marginTop: "0" }}>The Ethereum Blockchain Explorer</p>
                                 <form style={{ marginBottom: "12px" }}>
-                                    <div style={{ padding: "6px", display: "flex", gap: "2", borderRadius: "5px", backgroundColor: "white", alignItems: "center" }}>
-                                        <div>
+                                    <div style={{ padding: "6px", display: "flex", gap: "2", borderRadius: "5px", backgroundColor: "white", alignItems: "center", gap: "8px" }}>
+                                        <div className="resSearchFilter">
                                             <select className="form-select">
                                                 <option selected="" value="0">All Filters</option>
                                                 <option value="1">Addresses</option>
@@ -35,11 +35,11 @@ function SearchBar() {
                                         </div>
                                     </div>
                                 </form>
-                                <p style={{ color: "darkgrey" }}>Sponsored:Discover World of Dypians Metaverse and earn 25% APR in Ethereum.
+                                <p style={{ color: "darkgrey" }} className="resSponsored">Sponsored:Discover World of Dypians Metaverse and earn 25% APR in Ethereum.
                                     <a href="" style={{ fontWeight: "bold", color: "#0784c3", marginLeft: "5px" }}>Join Now!</a></p>
                             </Box>
                         </Grid>
-                        <Grid item xs={6} md={4}className="resChartbar">
+                        <Grid item xs={6} md={4} className="resChartbar">
                         </Grid>
                     </Grid>
                 </div>

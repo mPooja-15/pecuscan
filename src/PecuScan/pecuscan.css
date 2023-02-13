@@ -1,9 +1,15 @@
 .container{
     max-width: 1400px;
     margin:auto;
+    padding: 0 16px;
 }
 a{
     color: rgb(7, 132, 195);
+    font-weight: 500;
+}
+hr{
+    margin: 1.25rem 0;
+    border-top: 1px #e9ecef;
 }
 
 /* ----------------------  Navbar ---------------------- */
@@ -24,8 +30,11 @@ a{
     font-size: 18px;
 }
 @media (max-width: 768px){
-    .resHeader, .resUl{
+    /* .resHeader, .resUl{
         display: block !important;
+    } */
+    .resUl{
+        display: none !important;
     }
 }
 
@@ -57,6 +66,12 @@ a{
     .resSearchbar, .resChartbar{
         max-width: 100% !important;
     }
+    .resSearchFilter{
+        display: none;
+    }
+    .resSponsored{
+        margin: 0;
+    }
 }
 
 /* ----------------------  Content ---------------------- */
@@ -69,6 +84,38 @@ a{
 }
 .Eth_icon{
     margin-right: 15px;
+}
+.contentBox{
+    width: 100%;
+    margin-left: 0 !important;
+    padding: 20px 0px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid #e9ecef;
+    margin-top: -48px;
+    width: auto !important;
+}
+@media (max-width: 768px){
+    .contentBox{
+        display: block !important;
+    }
+    .resHr > hr{
+        display: block !important;
+    }
+}
+@media (max-width: 600px){
+    .resHr{
+        max-width: 100% !important;
+    } 
+}
+@media (max-width: 479px){
+    .contentFont{
+        font-size: 14px !important;
+    }
+    .resContent{
+        max-width: 100% !important;
+    } 
 }
 
 /* ----------------------  Block ---------------------- */
@@ -107,6 +154,7 @@ a{
     background-color: rgba(248,249,250,1);
     text-align: center;
     padding: 16px;
+    border-radius: 12px;
 }
 .block_footer a{
     color:#6c757d;
@@ -119,6 +167,20 @@ a{
 @media (max-width: 768px){
     .resBlock{
         display: block !important;
+    }
+}
+@media (max-width: 600px){
+    .block_icon, .block_Eth{
+        display: none !important;
+    }
+    .resblockContent{
+        display: block !important;
+    }
+    .resblockItem{
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+        line-height: 1.5;
     }
 }
 
@@ -136,12 +198,15 @@ a{
     background-color: #e9ecef;
     color: #111b36;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
 }
 .icon_base > a > i{
     padding: 7px;
-    align-items: center;
     display: flex;
-    justify-content: center;
+}
+.icon_base > a > i > svg{
+    font-size: 18px;
 }
 .footer_description{
     display: flex;
@@ -169,5 +234,25 @@ a{
     font-size: 13px;
     margin-left: 4px;
     color:rgba(220,53,69,1);
+}
+.resFooter{
+    display: flex ;
+    justify-content: space-around;
+    max-width: 100%;
+    padding-top: 32px;
+}
+@media (max-width: 768px){
+    .resBlock{
+        display: block !important;
+    }
+    .resFooterImg{
+        display: none;
+    }
+}
+@media (max-width: 600px){
+    .resblockContent{
+        display: block !important;
+    }
+    
 }
 

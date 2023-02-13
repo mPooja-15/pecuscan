@@ -291,12 +291,12 @@ function Navbar() {
                                 onClose={handleMorePopoverClose}
                                 disableRestoreFocus
                             >
-                                <Typography sx={{ p: 1,width:"100%"}}>
+                                <Typography sx={{ p: 1, width: "100%" }}>
                                     <Box sx={{ flexGrow: 1 }}>
                                         <Grid container spacing={2}>
                                             <Grid item xs={3}>
                                                 <Box >
-                                                <h4 style={{ marginTop: "0",marginBottom:"12px"}}>Tools & services</h4>
+                                                <h4 style={{ marginTop: "0",marginBottom: "12px" }}>Tools & services</h4>
                                                 <p style={{ fontSize: "13px" }}>Discover more of Etherscan's tools and services in one place.</p>
                                                 </Box>
                                             </Grid>
@@ -318,8 +318,11 @@ function Navbar() {
                             <Typography>|</Typography>
 
                             <Typography >
-                                <a className="navbarHead" style={{color:"black"}}><i className="navbarIcon" style={{marginRight:"4px"}}><AccountCircleOutlinedIcon/></i> Sign In</a>
+                                <a className="navbarHead" style={{ color: "black" }}><i className="navbarIcon" style={{ marginRight: "4px" }}><AccountCircleOutlinedIcon /></i> Sign In</a>
                             </Typography>
+                        </div>
+                        <div>
+                            
                         </div>
                     </div>
                 </div>
