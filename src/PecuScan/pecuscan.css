@@ -29,6 +29,9 @@ hr{
 .navbarIcon > svg{
     font-size: 18px;
 }
+.navbarToggler{
+    justify-content: space-between !important;
+}
 @media (max-width: 768px){
     /* .resHeader, .resUl{
         display: block !important;
@@ -103,6 +106,9 @@ hr{
     .resHr > hr{
         display: block !important;
     }
+    .resGrid{
+        max-width: 100% !important;
+    } 
 }
 @media (max-width: 600px){
     .resHr{

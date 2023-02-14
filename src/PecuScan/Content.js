@@ -14,7 +14,7 @@ function Content() {
             <section className="container">
                 <Grid container className="contentBox" spacing={2} >
 
-                    <Grid item xs={4} className="resContent" sx={{ paddingRight: "16px", paddingTop: "0px !important" }}>
+                    <Grid item xs={4} className="resContent resGrid" sx={{ paddingRight: "16px", paddingTop: "0px !important" }}>
                         <Box sx={{ display: "flex" }}>
                             <Box className="Eth_icon">
                                 <img class="img-fluid" width="18" data-img-theme="light" src="https://etherscan.io/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo" />
@@ -40,7 +40,7 @@ function Content() {
 
                     </Grid>
 
-                    <Grid item xs={4} className="resHr" sx={{ borderLeft: "1px solid #e9ecef", paddingRight: "16px", paddingTop: "0px !important" }}>
+                    <Grid item xs={4} className="resHr resGrid" sx={{ borderLeft: "1px solid #e9ecef", paddingRight: "16px", paddingTop: "0px !important" }}>
                                            <hr style={{ display: "none" }} />
                         <Box sx={{ display: "flex" }}>
                             <Box className="Eth_icon">
@@ -73,7 +73,7 @@ function Content() {
                     </Grid>
                     
 
-                    <Grid item xs={4} className="resHr" sx={{ borderLeft: "1px solid #e9ecef", paddingTop: "0px !important" }}>
+                    <Grid item xs={4} className="resHr resGrid" sx={{ borderLeft: "1px solid #e9ecef", paddingTop: "0px !important" }}>
                     <hr style={{ display: "none" }} />
                         <Typography className="text-grey">Transaction History in 14 days</Typography>
                         <Box sx={{ paddingTop: "8px" }}>
