@@ -7,10 +7,10 @@ a{
     color: rgb(7, 132, 195);
     font-weight: 500;
 }
-hr{
+/* hr{
     margin: 16px 0;
     border-top: 1px #e9ecef;
-}
+} */
 
 /* ----------------------  Navbar ---------------------- */
 
@@ -264,7 +264,7 @@ hr{
 
 
 .modal-dialog {
-    max-width: 509px !important;
+    max-width: 50% !important;
 }
 .bold-text{
     overflow-wrap: break-word;  
@@ -272,5 +272,16 @@ hr{
     word-break: break-word;
 }
 .modal-show{
-   padding:15px ;
+   padding:20px 0;
+}
+.modalSet > .modal-dialog{
+    position: relative;
+    top:20%;
+}
+.gridContent{
+    padding: 0 !important;
+}
+.gridBody{
+    margin: 10px 0 !important;
+    width:auto !important;
 }

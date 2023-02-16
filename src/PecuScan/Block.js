@@ -56,7 +56,6 @@ function Block() {
         setOpen(true);
     };
 
-
     return (
         <>
             {/* <button onClick={transaction}>transaction</button>
@@ -477,6 +476,457 @@ function Block() {
                                         </Box>
                                     </Grid>
                                 </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                        <hr/>
+                                        
+                                    </Grid>
+                                </Grid>
+                               
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                        <hr/>
+                                        
+                                    </Grid>
+                                </Grid>
+                               
+                                <hr />
+                                <Grid
+                                    spacing={2}
+                                    sx={{ display: "flex" }}
+                                    className="resblockContent"
+                                >
+                                    <Grid xs={4} sx={{ maxWidth: "100%" }}>
+                                        <Grid
+                                            sx={{ display: "flex", alignItems: "center", gap: "8px" }}
+                                        >
+                                            <Box className="block_icon">
+                                                <i>
+                                                    <SdStorageOutlinedIcon />
+                                                </i>
+                                            </Box>
+                                            <Box className="resblockItem">
+                                                <a className="text-truncate">16590643</a>
+                                                <Typography className="text-muted">
+                                                    {" "}
+                                                    8 secs ago
+                                                </Typography>
+                                            </Box>
+                                        </Grid>
+                                    </Grid>
+                                    <Grid
+                                        xs={8}
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "space-between",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        <Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>From </Typography>
+                                                <a style={{ maxWidth: "128px" }}>0xd1A0b5...d1d579a1</a>
+                                            </Box>
+                                            <Box className="block_gap">
+                                                <Typography sx={{ fontSize: "15px" }}>To</Typography>
+                                                <a className="text-truncate">0x690B9A...b4FaC990 </a>
+                                            </Box>
+                                        </Box>
+                                        <Box>
+                                            <p className="block_Eth">
+                                                <b>0 Eth</b>
+                                            </p>
+                                        </Box>
+                                        <hr/>
+                                        
+                                    </Grid>
+                                </Grid>
+                               
+                                <hr />
                             </Box>
                             <Box className="block_footer text-grey">
                                 <a>
@@ -494,10 +944,11 @@ function Block() {
                 size="sm"
                 show={modalOpen}
                 aria-labelledby="example-modal-sizes-title-sm"
+                className="modalSet"
             >
                 <Box className="modal-show">
                     {console.log(SingleData?.public_key, "SingleData?.public_keySingleData?.public_key")}
-                    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                    {/* <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                         <Typography id="modal-modal-title" variant="h6" component="h2"><b> Public ledger Data</b></Typography>
                         <Button sx={{ color: "black" }} onClick={() => setOpen(false)}><CloseIcon /></Button>
                     </Box>
@@ -506,7 +957,120 @@ function Block() {
                         <Box sx={{ padding: "4px" }}><b>block length :</b> {SingleData?.id}</Box>
                         <Box sx={{ padding: "4px" }}><b>Value :</b> {SingleData?.value}</Box>
                         <Box sx={{ padding: "4px" }}><b>Transfer Type :</b> {SingleData?.trans_type}</Box>
-                    </Typography>
+                    </Typography> */}
+                    <Box sx={{ display: "flex", justifyContent: "space-between",marginBottom:"20px" }}>
+                        <Typography id="modal-modal-title" variant="h6" component="h2" sx={{paddingLeft:"16px"}}><b> Public ledger Data</b></Typography>
+                        <Button sx={{ color: "black" }} onClick={() => setOpen(false)}><CloseIcon /></Button>
+                    </Box>
+                    <Box sx={{padding:"0 16px"}}>
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Transaction Hash:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent" style={{color:"#0784c3"}}>
+                                {SingleData?.public_key}
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Status:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.status}
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Block:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.block_no}
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Timestamp:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.date_time}
+                            </Grid>
+                        </Grid>
+
+                        <hr/>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                               To public key:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent" style={{color:"#0784c3"}}>
+                                {SingleData?.to_public_key}
+                            </Grid>
+                        </Grid>
+
+                        <hr/>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                From:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.from_uid}
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                to:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.to_uid}
+                            </Grid>
+                        </Grid>
+
+                        <hr/>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Value:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.value}
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Transaction Type:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.trans_type}
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Action:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                {SingleData?.action}
+                            </Grid>
+                        </Grid>
+                        
+                    </Box>
+
+                    <Box sx={{padding:"0 16px"}}>
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{color:"#6c757d",fontSize:"17px"}}>
+                                Transaction Hash:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent " style={{color:"#0784c3"}}>
+                                {SingleData?.public_key}
+                            </Grid>
+                        </Grid>
+</Box>
                 </Box>
             </Modal>
 
