@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Typography } from "@mui/material";
@@ -9,13 +9,16 @@ import { useEffect } from "react";
 import axios from "axios";
 
 function Content() {
-
+    const [charts, setCharts] = useState([]);
+    
     const chart = () => {
         axios.get('http://localhost:3001/wallet/getChartData')
             .then(res => {
-                console.log(res, "chart");
+                console.log(res.data, "chart");
+                setCharts(res)
             }).catch(err => console.log(err))
     };
+   
 
     const indexCoin = () => {
         axios.get('http://localhost:3001/wallet/get_current_index_coin')
@@ -24,12 +27,45 @@ function Content() {
             }).catch(err => console.log(err))
     };
 
+    const supplyCoin = () => {
+        axios.get('http://localhost:3001/wallet/calculate_circulating_supply')
+            .then(res => {
+                console.log(res, "supplyCoin");
+            }).catch(err => console.log(err))
+    };
+
+    const dailyVolume = () => {
+        axios.get('http://localhost:3001/wallet/calculate_daily_volume')
+            .then(res => {
+                console.log(res, "dailyVolume");
+            }).catch(err => console.log(err))
+    };
+
+    const marketCap = () => {
+        axios.get('http://localhost:3001/wallet/marketcap')
+            .then(res => {
+                console.log(res, "marketCap");
+            }).catch(err => console.log(err))
+    };
+
+    const changeIndexCoin = () => {
+        axios.get('http://localhost:3001/wallet/get_change_index_coin')
+            .then(res => {
+                console.log(res, "changeIndexCoin");
+            }).catch(err => console.log(err))
+    };
+
+
     return (
         <>
 
             {/* <button onClick={chart}>chart</button>
-            <button onClick={indexCoin}>indexCoin</button> */}
-            
+            <button onClick={indexCoin}>indexCoin</button>
+            <button onClick={supplyCoin}>supplyCoin</button>
+            <button onClick={dailyVolume}>dailyVolume</button>
+            <button onClick={marketCap}>marketCap</button>
+            <button onClick={changeIndexCoin}>changeIndexCoin</button> */}
+
             <section className="container">
                 <Grid container className="contentBox" spacing={2} >
 
