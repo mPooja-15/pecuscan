@@ -100,7 +100,7 @@ function Navbar() {
                       width="150"
                       data-img-theme="light"
                       src="https://etherscan.io/assets/svg/logos/logo-etherscan.svg?v=0.0.5"
-                      alt="Etherscan Logo"
+                      alt="Pecuscan Logo"
                     />
                   </a>
                 </Typography>

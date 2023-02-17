@@ -128,8 +128,23 @@ function Block() {
         setOpen(true);
     };
 
+    const TransactionsData = () => {
+        const body = {
+            uid: "106",
+            pub_key: "nZdei6wmolhFN3BTlE5XQrhT8vXOLm9nRrqukv5pFMVVSEWPnLCxVhLNXmyjJnwz9cIICry2kercFKic",
+        };
+        axios
+            .post("https://api.pecunovus.net/wallet/my_latest_transactions", body)
+            .then((res) => {
+                console.log(res, "transaction Response");
+            })
+            .catch((err) => console.log(err));
+    };
+    
+
     return (
         <>
+            {/* <button onClick={TransactionsData}>TransactionsData</button> */}
             <section className="container" style={{ paddingBottom: "80px" }}>
                 <Box
                     sx={{ flexGrow: 1, display: "flex", gap: "16px" }}
@@ -192,13 +207,13 @@ function Block() {
                                                     <Box>
                                                         <Box className="block_gap">
                                                             <Typography sx={{ fontSize: "15px" }}>
-                                                                Fee Recipient
+                                                                Public key
                                                             </Typography>
                                                             <a
                                                                 className="text-truncate"
                                                                 style={{ maxWidth: "128px" }}
                                                             >
-                                                                MEV Builder: 0xbd...b01
+                                                                {data.public_key}
                                                             </a>
                                                         </Box>
                                                         <Box className="block_gap">
@@ -209,14 +224,14 @@ function Block() {
                                                         </Box>
                                                     </Box>
                                                     <Box>
-                                                        <p className="block_Eth">
-                                                            <b>0.01797 Eth</b>
+                                                        <p className="block_Eth text-truncate" style={{ maxWidth: "75px" }}>
+                                                            <b>{data.value}</b>
                                                         </p>
                                                     </Box>
                                                 </Grid>
                                             </Grid>
 
-                                            <Box className="hr"></Box>
+                                            <Box className="border_Space"></Box>
                                         </>
                                     );
                                 })}
@@ -296,7 +311,7 @@ function Block() {
                                                     </Box>
                                                 </Grid>
                                             </Grid>
-                                            <Box className="hr"></Box>
+                                            <Box className="border_Space"></Box>
                                         </>
                                     )
                                 })}

@@ -49,7 +49,7 @@ function Footer() {
                             <Grid container spacing={4} className="resblockContent">
                                 <Grid item xs={4} style={{ maxWidth: "100%" }}>
                                     <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
-                                        <img style={{ marginRight: "8px" }} width="20" data-img-theme="light" src="https://etherscan.io/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo" />
+                                        <img style={{ marginRight: "8px" }} width="20" data-img-theme="light" src="https://etherscan.io/images/svg/brands/ethereum-original.svg" alt="Pecuscan Logo" />
                                         <span style={{ fontSize: "18px", fontWeight: "500" }}>Powered by Pecuscan</span>
                                     </Box>
                                     <p style={{ fontSize: "13px" }}>Pecuscan is a Block Explorer and Analytics Platform for Pecuscan, a decentralized smart contracts platform.</p>
@@ -59,7 +59,7 @@ function Footer() {
                                 </Grid>
                                 <Grid xs={6} className="resFooter" sx={{ maxWidth: "100%" }}>
                                     <Grid item xs={3}>
-                                        <h4 style={{ marginTop: "0", marginBottom: "12px" }}>Company</h4>
+                                        <span style={{ fontSize: "18px", fontWeight: "500" }}>Company</span>
                                         <List>
                                             <ListItem className="List_item"><a>About us</a></ListItem>
                                             <ListItem className="List_item"><a>Brand Assets</a></ListItem>
@@ -70,7 +70,7 @@ function Footer() {
                                         </List>
                                     </Grid>
                                     <Grid item xs={3}>
-                                        <h4 style={{ marginTop: "0", marginBottom: "12px" }}>Community</h4>
+                                        <span style={{ fontSize: "18px", fontWeight: "500" }}>Community</span>
                                         <List>
                                             <ListItem className="List_item"><a>API Documentation</a></ListItem>
                                             <ListItem className="List_item"><a>Knowledge Base</a></ListItem>
@@ -81,7 +81,7 @@ function Footer() {
                                     </Grid>
                                 </Grid>
                                 <Grid item xs={2} sx={{ maxWidth: "100%" }}>
-                                    <h4 style={{ marginTop: "0", marginBottom: "12px" }}>Products & Services</h4>
+                                    <span style={{ fontSize: "18px", fontWeight: "500" }}>Products & Services</span>
                                     <List>
                                         <ListItem className="List_item"><a>Advertise</a></ListItem>
                                         <ListItem className="List_item"><a>Explorer-as-a-Services(EaaS)</a></ListItem>
