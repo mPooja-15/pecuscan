@@ -9,11 +9,11 @@ import Footer from './Footer';
 function Pecuscan() {
     return (
         <>
-        <Navbar/>
-        <SearchBar/>
-        <Content/>
-        <Block/>
-        <Footer/>
+            <Navbar />
+            <SearchBar />
+            <Content />
+            <Block />
+            <Footer />
         </>
     )
 }

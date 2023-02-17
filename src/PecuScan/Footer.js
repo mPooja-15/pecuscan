@@ -47,7 +47,7 @@ function Footer() {
                         <hr style={{ margin: 0 }} />
                         <Box className="footer_description">
                             <Grid container spacing={4} className="resblockContent">
-                                <Grid item xs={4} style={{maxWidth:"100%"}}>
+                                <Grid item xs={4} style={{ maxWidth: "100%" }}>
                                     <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
                                         <img style={{ marginRight: "8px" }} width="20" data-img-theme="light" src="https://etherscan.io/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo" />
                                         <span style={{ fontSize: "18px", fontWeight: "500" }}>Powered by Pecuscan</span>
@@ -57,7 +57,7 @@ function Footer() {
                                         <img class="opacity-50" width="280" data-img-theme="light" src="https://etherscan.io/images/map.png" alt="Background Map Image" />
                                     </Box>
                                 </Grid>
-                                <Grid xs={6} className="resFooter" sx={{maxWidth:"100%"}}>
+                                <Grid xs={6} className="resFooter" sx={{ maxWidth: "100%" }}>
                                     <Grid item xs={3}>
                                         <h4 style={{ marginTop: "0", marginBottom: "12px" }}>Company</h4>
                                         <List>
@@ -80,7 +80,7 @@ function Footer() {
                                         </List>
                                     </Grid>
                                 </Grid>
-                                <Grid item xs={2} sx={{maxWidth:"100%"}}>
+                                <Grid item xs={2} sx={{ maxWidth: "100%" }}>
                                     <h4 style={{ marginTop: "0", marginBottom: "12px" }}>Products & Services</h4>
                                     <List>
                                         <ListItem className="List_item"><a>Advertise</a></ListItem>
