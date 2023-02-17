@@ -50,9 +50,9 @@ function Footer() {
                                 <Grid item xs={4} style={{maxWidth:"100%"}}>
                                     <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
                                         <img style={{ marginRight: "8px" }} width="20" data-img-theme="light" src="https://etherscan.io/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo" />
-                                        <span style={{ fontSize: "18px", fontWeight: "500" }}>Powered by Ethereum</span>
+                                        <span style={{ fontSize: "18px", fontWeight: "500" }}>Powered by Pecuscan</span>
                                     </Box>
-                                    <p style={{ fontSize: "13px" }}>Etherscan is a Block Explorer and Analytics Platform for Ethereum, a decentralized smart contracts platform.</p>
+                                    <p style={{ fontSize: "13px" }}>Pecuscan is a Block Explorer and Analytics Platform for Pecuscan, a decentralized smart contracts platform.</p>
                                     <Box className="resFooterImg">
                                         <img class="opacity-50" width="280" data-img-theme="light" src="https://etherscan.io/images/map.png" alt="Background Map Image" />
                                     </Box>
@@ -95,7 +95,7 @@ function Footer() {
                         </Box>
                         <Box className="footer_copyright">
                             <Box container spacing={4} sx={{ display: "flex", justifyContent: "space-between", fontSize: "13px" }} className="resblockContent">
-                                <Grid item xs={2}><p style={{ margin: "0" }}>Etherscan © 2023 (F1)</p></Grid>
+                                <Grid item xs={2}><p style={{ margin: "0" }}>Pecuscan © 2023 (F1)</p></Grid>
                                 <Grid item xs={2}><p style={{ margin: "0" }}>Donations: <a >0x71c765...d8976f</a><i className="heartIcon"><FavoriteOutlinedIcon /></i></p></Grid>
                             </Box>
                         </Box>

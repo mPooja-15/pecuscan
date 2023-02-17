@@ -384,7 +384,7 @@ function Navbar() {
                                                         <Grid item xs={3}>
                                                             <Box >
                                                                 <h4 style={{ marginTop: "0", marginBottom: "12px" }}>Tools & services</h4>
-                                                                <p style={{ fontSize: "13px" }}>Discover more of Etherscan's tools and services in one place.</p>
+                                                                <p style={{ fontSize: "13px" }}>Discover more of Pecuscan's tools and services in one place.</p>
                                                             </Box>
                                                         </Grid>
                                                         <Grid item xs={3}>
