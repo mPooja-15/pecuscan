@@ -2,18 +2,44 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Button, Popover, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 import EastIcon from "@mui/icons-material/East";
 import SdStorageOutlinedIcon from "@mui/icons-material/SdStorageOutlined";
 import Modal from "react-bootstrap/Modal";
 import CloseIcon from '@mui/icons-material/Close';
+import CancelIcon from '@mui/icons-material/Cancel';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import "./pecuscan.css"
 
 function Block() {
     const [pecuscanData, setpecuscanData] = useState([]);
     const [modalOpen, setOpen] = React.useState(false);
     const [SingleData, setSingleData] = React.useState();
+    const [formatTime, setFormatTime] = React.useState();
+    const [formatDate, setFormatDate] = React.useState();
+
+    const TimeFormat = () => {
+        const time = new Date(SingleData?.date_time).toLocaleString()
+        setFormatTime(time)
+    }
+    console.log(formatTime, "formatTime");
+    useEffect(() => {
+        TimeFormat()
+    }, [SingleData])
+
+    const DateFormat = () => {
+        pecuscanData.map((data) => {
+            console.log(data, "dataaaaaaa");
+            const date = new Date(data?.date_time).toLocaleDateString()
+            setFormatDate(date)
+        })
+    }
+    console.log(formatDate, "formatDate");
+    useEffect(() => {
+        DateFormat()
+    }, [pecuscanData])
 
     const TransactionData = [
         {
@@ -140,8 +166,6 @@ function Block() {
             })
             .catch((err) => console.log(err));
     };
-    
-
     return (
         <>
             {/* <button onClick={TransactionsData}>TransactionsData</button> */}
@@ -190,7 +214,7 @@ function Block() {
                                                             <a className="text-truncate">{data.id}</a>
                                                             <Typography className="text-muted">
                                                                 {" "}
-                                                                8 secs ago
+                                                                {formatDate}
                                                             </Typography>
                                                         </Box>
                                                     </Grid>
@@ -336,10 +360,10 @@ function Block() {
             >
                 <Box className="modal-show">
                     <Box sx={{ display: "flex", justifyContent: "space-between", marginBottom: "20px" }}>
-                        <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ paddingLeft: "16px" }}><b> Public ledger Data</b></Typography>
+                        <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ paddingLeft: "20px" }}><b> Public ledger Data</b></Typography>
                         <Button sx={{ color: "black" }} onClick={() => setOpen(false)}><CloseIcon /></Button>
                     </Box>
-                    <Box sx={{ padding: "0 16px" }}>
+                    <Box sx={{ padding: "0 20px" }}>
                         <Grid container spacing={2} className="gridBody">
                             <Grid item xs={4} className="gridContent" sx={{ color: "#6c757d", fontSize: "17px" }}>
                                 Transaction Hash:
@@ -354,7 +378,7 @@ function Block() {
                                 Status:
                             </Grid>
                             <Grid item xs={8} className="bold-text gridContent">
-                                {SingleData?.status}
+                                {SingleData?.status === 0 ? <span className="failButton"><i><CancelIcon /></i>Fail</span> : <span className="successButton"><i><CheckCircleIcon /></i>Success</span>}
                             </Grid>
                         </Grid>
 
@@ -371,8 +395,9 @@ function Block() {
                             <Grid item xs={4} className="gridContent" sx={{ color: "#6c757d", fontSize: "17px" }}>
                                 Timestamp:
                             </Grid>
-                            <Grid item xs={8} className="bold-text gridContent">
-                                {SingleData?.date_time}
+                            <Grid item xs={8} className="bold-text gridContent" >
+                                <i><AccessTimeIcon /></i>
+                                {formatTime}
                             </Grid>
                         </Grid>
 
@@ -393,8 +418,8 @@ function Block() {
                             <Grid item xs={4} className="gridContent" sx={{ color: "#6c757d", fontSize: "17px" }}>
                                 From:
                             </Grid>
-                            <Grid item xs={8} className="bold-text gridContent">
-                                {SingleData?.from_uid}
+                            <Grid item xs={8} className="bold-text gridContent" style={{ color: "#0784c3" }}>
+                                {SingleData?.key}
                             </Grid>
                         </Grid>
 
@@ -414,6 +439,7 @@ function Block() {
                                 Value:
                             </Grid>
                             <Grid item xs={8} className="bold-text gridContent">
+                                <img style={{ marginRight: "8px" }} width="16" data-img-theme="light" src="https://pecunovus.net/static/media/icon.25c8ec299d961b9dd524.ico" alt="Pecuscan Logo" />
                                 {SingleData?.value}
                             </Grid>
                         </Grid>
@@ -429,6 +455,15 @@ function Block() {
 
                         <Grid container spacing={2} className="gridBody">
                             <Grid item xs={4} className="gridContent" sx={{ color: "#6c757d", fontSize: "17px" }}>
+                                Transaction Fee:
+                            </Grid>
+                            <Grid item xs={8} className="bold-text gridContent">
+                                0
+                            </Grid>
+                        </Grid>
+
+                        <Grid container spacing={2} className="gridBody">
+                            <Grid item xs={4} className="gridContent" sx={{ color: "#6c757d", fontSize: "17px" }}>
                                 Action:
                             </Grid>
                             <Grid item xs={8} className="bold-text gridContent">
@@ -436,15 +471,14 @@ function Block() {
                             </Grid>
                         </Grid>
 
-                    </Box>
+                        <hr />
 
-                    <Box sx={{ padding: "0 16px" }}>
                         <Grid container spacing={2} className="gridBody">
                             <Grid item xs={4} className="gridContent" sx={{ color: "#6c757d", fontSize: "17px" }}>
-                                Transaction Hash:
+                                Public Note:
                             </Grid>
-                            <Grid item xs={8} className="bold-text gridContent " style={{ color: "#0784c3" }}>
-                                {SingleData?.public_key}
+                            <Grid item xs={8} className="bold-text gridContent">
+                                To access the <strong>Public Note</strong> feature, you must be <a style={{ color: "#0784c3" }}>Logged In</a>
                             </Grid>
                         </Grid>
                     </Box>

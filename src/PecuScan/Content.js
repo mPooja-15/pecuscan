@@ -5,7 +5,6 @@ import { Typography } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import DnsOutlinedIcon from "@mui/icons-material/DnsOutlined";
 import SpeedIcon from "@mui/icons-material/Speed";
-import { useEffect } from "react";
 import axios from "axios";
 
 function Content() {
@@ -82,7 +81,7 @@ function Content() {
                   class="img-fluid"
                   width="18"
                   data-img-theme="light"
-                  src="https://etherscan.io/images/svg/brands/ethereum-original.svg"
+                  src="https://pecunovus.net/static/media/icon.25c8ec299d961b9dd524.ico"
                   alt="Pecuscan Logo"
                 />
               </Box>

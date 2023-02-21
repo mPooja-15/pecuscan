@@ -274,7 +274,7 @@ hr{
 /* ----------------------  Modal ---------------------- */
 
 .modal-dialog {
-    max-width: 50% !important;
+    max-width: 60% !important;
 }
 .bold-text{
     overflow-wrap: break-word;  
@@ -286,12 +286,47 @@ hr{
 }
 .modalSet > .modal-dialog{
     position: relative;
-    top:15%;
+    top:12%;
+}
+.modalSet > .modal-dialog > .modal-content{
+    box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
 }
 .gridContent{
     padding: 0 !important;
 }
+.gridContent i > svg{
+    font-size: 17px;
+    margin: 0 4px 1px 0;
+}
 .gridBody{
     margin: 10px 0 !important;
     width:auto !important;
+}
+.failButton{
+    color:red !important;
+    background-color: rgb(161, 0 ,5 , 10%);
+    padding:2px 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 0, 0, 26%);
+    font-size: 12px;
+}
+.failButton i>svg{
+    font-size: 13px;
+    margin-right: 4px;
+    display: inline;
+    vertical-align: text-bottom;
+}
+.successButton{
+    color:#00a186 !important;
+    background-color: rgba(0, 161 ,134 , 0.1);
+    padding:2px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 161 ,134 , 0.25);
+    font-size: 12px;
+}
+.successButton i>svg{
+    font-size: 13px;
+    margin-right: 4px;
+    display: inline;
+    vertical-align: text-bottom;
 }

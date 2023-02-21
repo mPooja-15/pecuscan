@@ -49,7 +49,7 @@ function Footer() {
                             <Grid container spacing={4} className="resblockContent">
                                 <Grid item xs={4} style={{ maxWidth: "100%" }}>
                                     <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
-                                        <img style={{ marginRight: "8px" }} width="20" data-img-theme="light" src="https://etherscan.io/images/svg/brands/ethereum-original.svg" alt="Pecuscan Logo" />
+                                        <img style={{ marginRight: "8px" }} width="20" data-img-theme="light" src="https://pecunovus.net/static/media/icon.25c8ec299d961b9dd524.ico" alt="Pecuscan Logo" />
                                         <span style={{ fontSize: "18px", fontWeight: "500" }}>Powered by Pecuscan</span>
                                     </Box>
                                     <p style={{ fontSize: "13px" }}>Pecuscan is a Block Explorer and Analytics Platform for Pecuscan, a decentralized smart contracts platform.</p>

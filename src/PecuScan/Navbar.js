@@ -97,9 +97,9 @@ function Navbar() {
                 >
                   <a>
                     <img
-                      width="150"
+                      width="50"
                       data-img-theme="light"
-                      src="https://etherscan.io/assets/svg/logos/logo-etherscan.svg?v=0.0.5"
+                      src="https://pecunovus.net/static/media/icon.25c8ec299d961b9dd524.ico"
                       alt="Pecuscan Logo"
                     />
                   </a>
