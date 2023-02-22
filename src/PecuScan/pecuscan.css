@@ -1,10 +1,10 @@
 .container{
-    max-width: 1400px;
+    max-width: 1400px !important;
     margin:auto;
     padding: 0 16px;
 }
 a{
-    color: rgb(7, 132, 195);
+    color: rgb(7, 132, 195) !important;
     font-weight: 500;
     text-decoration: none !important; 
 }
@@ -197,6 +197,19 @@ hr{
         gap: 4px;
         line-height: 1.5;
     }
+    .block_body {
+        height: 485px;
+        overflow-y: auto;
+    }
+    .block_body::-webkit-scrollbar{
+        width: 8px;
+        background-color: #e9ecef;
+        border-radius: 5px;
+    }
+    .block_body::-webkit-scrollbar-thumb {
+        background-color: #ced4da;
+        border-radius: 5px;
+    }
 }
 
 /* ----------------------  Footer ---------------------- */
@@ -329,4 +342,24 @@ hr{
     margin-right: 4px;
     display: inline;
     vertical-align: text-bottom;
+}
+@media (max-width: 768px){
+    .modal-dialog{
+        max-width: 80% !important;
+    }
+}
+@media (max-width: 600px){
+    .modal-dialog{
+        margin: auto !important;
+        max-width: 100% !important;   
+    }
+    .setDisplay{
+        display: block !important;
+    }
+    .setWidth{
+        max-width: 100% !important;
+    }
+    .modalSet{
+        padding-left: 0%;
+    }
 }
