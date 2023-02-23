@@ -2,6 +2,19 @@ h1{
     margin: 0;
     font-size: 20px;
 }
+a{
+    color: rgb(7, 132, 195);
+    font-weight: 500;
+    text-decoration: none !important;
+}
+p{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* ----------------------  Addblock ---------------------- */
+
 .headerBlock{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -12,19 +25,49 @@ h1{
     padding-bottom: 12px; 
 }
 
+/* ----------------------  blockContent ---------------------- */
+
 .blockContent{
-    margin: 16px 0 !important;
+    width:25%;
+}
+.blockContent:hover .hoverContent {
+    color:#0784c3;
+}
+.mainHead{
+    text-transform: uppercase;
+    color: #6c757d;
+    font-size: 12px !important;
+    letter-spacing: .5px !important;
+    margin-bottom: 1px !important;
+    display: flex;
+    justify-content: space-between;
+}
+.mainHead i{
+    opacity: 0; 
+    color: #6c757d;
+}
+.mainHead i > svg{
+    font-size: 15px;
+}
+.blockContent:hover .mainHead i{
+    opacity:1;
+}
+.mainContent{
+    display: flex;
+    margin-bottom: 16px;
+    gap: 18px;
 }
 .contentCard{
-    box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+    box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%) !important;
     padding: 16px;
     border: 1px solid #e9ecef;
-    border-radius: 5px;
-    background-color: #fff;
+    border-radius: 10px !important;
 }
+
+/* ----------------------  Newblock ---------------------- */
+
 .blockCard{
     box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
-    /* padding: 16px; */
     border: 1px solid #e9ecef;
     border-radius: 5px;
     background-color: #fff;
@@ -33,4 +76,8 @@ h1{
 .tableHead{
     color:black;
     font-weight: 600 !important;
+}
+.lightIcon > svg{
+    font-size: 16px;
+    margin-right: 4px;
 }

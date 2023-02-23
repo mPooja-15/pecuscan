@@ -1,10 +1,10 @@
 .container{
-    max-width: 1400px !important;
+    max-width: 1400px ;
     margin:auto;
     padding: 0 16px;
 }
 a{
-    color: rgb(7, 132, 195) !important;
+    color: rgb(7, 132, 195);
     font-weight: 500;
     text-decoration: none !important; 
 }
