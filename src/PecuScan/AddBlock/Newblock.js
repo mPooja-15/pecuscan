@@ -54,14 +54,17 @@ const rows = [
 
 
 function Newblock() {
-
+  // const [pageSize,setPageSize] = React.useState();
+  // console.log(pageSize,"pageSize");
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+
+  console.log(page, "page");
+  console.log(rowsPerPage, "rowsPerPage");
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
-
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
@@ -76,8 +79,6 @@ function Newblock() {
               <div style={{ padding: "16px" }}>
                 <div>
                   <span>Total of 16,683,133 blocks</span>
-                </div>
-                <div>
                   <p>(Showing blocks between #16683108 to #16683132)</p>
                 </div>
               </div>
@@ -101,29 +102,29 @@ function Newblock() {
                   </TableHead>
                   <TableBody>
                     {rows
-                    .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                    .map((data) => {
-                      return (
-                        <>
-                          <TableRow hover>
-                            <TableCell><a style={{ color: "rgb(7, 132, 195)" }}>{data.Block}</a></TableCell>
-                            <TableCell>{data.Age}</TableCell>
-                            <TableCell><a style={{ color: "rgb(7, 132, 195)" }}>{data.Txn}</a></TableCell>
-                            <TableCell><a style={{ color: "rgb(7, 132, 195)" }}>{data.Recipient}</a></TableCell>
-                            <TableCell>{data.Used}</TableCell>
-                            <TableCell>{data.Limit}</TableCell>
-                            <TableCell>{data.Fee}</TableCell>
-                            <TableCell>{data.Reward}</TableCell>
-                            <TableCell>{data.Burnt}</TableCell>
-                          </TableRow>
-                        </>
-                      );
-                    })}
+                      .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                      .map((data) => {
+                        return (
+                          <>
+                            <TableRow hover>
+                              <TableCell><a style={{ color: "rgb(7, 132, 195)" }}>{data.Block}</a></TableCell>
+                              <TableCell>{data.Age}</TableCell>
+                              <TableCell><a style={{ color: "rgb(7, 132, 195)" }}>{data.Txn}</a></TableCell>
+                              <TableCell><a style={{ color: "rgb(7, 132, 195)" }}>{data.Recipient}</a></TableCell>
+                              <TableCell>{data.Used}</TableCell>
+                              <TableCell>{data.Limit}</TableCell>
+                              <TableCell>{data.Fee}</TableCell>
+                              <TableCell>{data.Reward}</TableCell>
+                              <TableCell>{data.Burnt}</TableCell>
+                            </TableRow>
+                          </>
+                        );
+                      })}
                   </TableBody>
                 </Table>
               </TableContainer>
               <TablePagination
-                rowsPerPageOptions={[10, 25, 100]}
+                rowsPerPageOptions={[5, 10, 15]}
                 component="div"
                 count={rows.length}
                 rowsPerPage={rowsPerPage}
@@ -131,6 +132,19 @@ function Newblock() {
                 onPageChange={handleChangePage}
                 onRowsPerPageChange={handleChangeRowsPerPage}
               />
+              
+              {/* <select
+                value={pageSize}
+                onChange={(e) => {
+                  setPageSize(Number(e.target.value));
+                }}
+              >
+                {[10, 20, 30, 40, 50].map((pageSize) => (
+                  <option key={pageSize} value={pageSize}>
+                    Show {pageSize}
+                  </option>
+                ))}
+              </select> */}
             </Paper>
           </div>
           <div style={{ marginTop: "16px" }}>

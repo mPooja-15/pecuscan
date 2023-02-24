@@ -12,6 +12,9 @@ p{
     font-size: 14px;
     color: #6c757d;
 }
+.container{
+    max-width: 1400px;
+}
 
 /* ----------------------  Addblock ---------------------- */
 
@@ -62,6 +65,21 @@ p{
     padding: 16px;
     border: 1px solid #e9ecef;
     border-radius: 10px !important;
+}
+@media (max-width: 768px){
+    .mainContent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .blockContent{
+        width:48.5%;
+    }
+}
+@media (max-width: 600px){
+    .blockContent{
+        width:100%;
+    }
 }
 
 /* ----------------------  Newblock ---------------------- */
